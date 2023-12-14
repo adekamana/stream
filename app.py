@@ -304,7 +304,7 @@ if st.button("Начать магию!") :
         query = topic
 
         # Download images using bing-image-downloader
-        image_query = query + " slide"
+        image_query = query + "slide"
         downloader.download(image_query, limit=total_slides,  output_dir='slide_images', adult_filter_off=True, force_replace=False, timeout=10)
 
         # Add downloaded images to the slides
