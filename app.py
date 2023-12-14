@@ -311,7 +311,7 @@ if st.button("Начать магию!") :
         image_dir = "slide_images/"
         for i in range(total_slides):
             slide = presentation.slides[i]
-            image_path = f"{image_dir}/{image_query}/image_{i+1}.jpg"
+            image_path = f"/root/stream/{image_dir}/{image_query}/image_{i+1}.jpg"
             try:
                 slide.shapes.add_picture(image_path, Inches(3), Inches(4.5), width=Inches(4), height=Inches(3))
             except FileNotFoundError:
